@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos | Estilo Vivo Jenif</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f5f1;
+      color: #4a4a4a;
+    }
+    header {
+      background-color: #d8cfc4;
+      padding: 20px 40px;
+      text-align: center;
+      border-bottom: 2px solid #b49e82;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #5a4d3d;
+    }
+    nav {
+      background-color: #b8a78f;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+    nav a {
+      color: #f3ede7;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #d8b78e;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 30px;
+      color: #5a4d3d;
+    }
+    .categorias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .categoria {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .categoria:hover {
+      transform: scale(1.05);
+    }
+    .categoria a {
+      text-decoration: none;
+      color: #4a4a4a;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .categoria p {
+      font-size: 0.95rem;
+      color: #777;
+    }
+    .categoria img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 12px 25px;
+      background-color: #b49e82;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #d8b78e;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #7e7462;
+      border-top: 1px solid #b8a78f;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Estilo Vivo Jenif</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="quienes-somos.html">Quiénes somos</a>
+    <a href="quehacemos.html">Qué hacemos</a>
+    <a href="productos.html">Productos</a>
+  </nav>
+
+  <main>
+    <h2>Nuestros productos</h2>
+    <div class="categorias">
+      <div class="categoria">
+        <a href="ropanina.html">Ropa para niña</a>
+        <p>Edades: 0 a 12 años</p>
+        <img src="nina.jpg" alt="Ropa para niña">
+      </div>
+      <div class="categoria">
+        <a href="ropanino.html">Ropa para niño</a>
+        <p>Edades: 0 a 12 años</p>
+        <img src="nino.jpg" alt="Ropa para niño">
+      </div>
+      <div class="categoria">
+        <a href="ropamujer.html">Ropa para mujer</a>
+        <p>Adolescentes y adultas</p>
+        <img src="mujer.jpg" alt="Ropa para mujer">
+      </div>
+      <div class="categoria">
+        <a href="ropahombre.html">Ropa para hombre</a>
+        <p>Adolescentes y adultos</p>
+        <img src="hombre.jpg" alt="Ropa para hombre">
+      </div>
+    </div>
+
+    <a class="back-button" href="index.html">← Regresar al inicio</a>
+  </main>
+
+  <footer>
+    &copy; 2025 Estilo Vivo Jenif. Todos los derechos reservados.
+  </footer>
+</body>
+</html>

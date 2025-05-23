@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ropa para hombre | Estilo Vivo Jenif</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f5f1;
+      color: #4a4a4a;
+      margin: 0; padding: 20px;
+      max-width: 1000px; margin-left: auto; margin-right: auto;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #5a4d3d;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .producto {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .producto:hover {
+      transform: scale(1.05);
+    }
+    .producto img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .producto h3 {
+      margin: 10px 0 5px;
+      color: #4a4a4a;
+    }
+    .producto p {
+      margin: 4px 0;
+      font-size: 0.9rem;
+      color: #5a4d3d;
+      text-align: left;
+    }
+    a.back-button {
+      display: block;
+      width: max-content;
+      margin: 40px auto 0;
+      padding: 12px 25px;
+      background-color: #b49e82;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    a.back-button:hover {
+      background-color: #d8b78e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Estilo Vivo Jenif</h1>
+  <h2>Ropa para hombre</h2>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="cami.jpg" alt="Camisa azul para hombre" />
+      <h3>Camisa azul</h3>
+      <p><strong>Precio:</strong> $400 MXN</p>
+      <p><strong>Colores:</strong> Azul, Blanco</p>
+      <p><strong>Tallas:</strong> M, L, XL, XXL</p>
+    </div>
+    <div class="producto">
+      <img src="negra.jpg" alt="Playera negra para hombre" />
+      <h3>Playera negra</h3>
+      <p><strong>Precio:</strong> $220 MXN</p>
+      <p><strong>Colores:</strong> Negro, Gris</p>
+      <p><strong>Tallas:</strong> S, M, L</p>
+    </div>
+    <div class="producto">
+      <img src="jeni.jpg" alt="Pantalón beige para hombre" />
+      <h3>Pantalón beige</h3>
+      <p><strong>Precio:</strong> $450 MXN</p>
+      <p><strong>Colores:</strong> Beige, Azul marino</p>
+      <p><strong>Tallas:</strong> M, L, XL, XXL</p>
+    </div>
+    <div class="producto">
+      <img src="verde.jpg" alt="Suéter verde para hombre" />
+      <h3>Suéter verde</h3>
+      <p><strong>Precio:</strong> $400 MXN</p>
+      <p><strong>Colores:</strong> Gris, Azul</p>
+      <p><strong>Tallas:</strong> L, XL, XXL</p>
+    </div>
+    <div class="producto">
+      <img src="cuero.jpg" alt="Chamarra de piel para hombre" />
+      <h3>Chamarra de piel</h3>
+      <p><strong>Precio:</strong> $700 MXN</p>
+      <p><strong>Colores:</strong> Negro</p>
+      <p><strong>Tallas:</strong> M, L, XL, XXL</p>
+    </div>
+  </div>
+
+  <a href="productos.html" class="back-button">← Regresar a productos</a>
+
+</body>
+</html>

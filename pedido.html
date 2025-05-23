@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de pedido | Estilo Vivo Jenif</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f5f1;
+      color: #4a4a4a;
+      margin: 0;
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #5a4d3d;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #b49e82;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d8b78e;
+    }
+
+    a.back-button {
+      display: block;
+      margin-top: 30px;
+      text-align: center;
+      text-decoration: none;
+      color: #5a4d3d;
+      font-weight: bold;
+    }
+
+    a.back-button:hover {
+      text-decoration: underline;
+    }
+
+    #mensaje-exito {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #dff0d8;
+      color: #3c763d;
+      border: 1px solid #d6e9c6;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formulario de Pedido</h1>
+
+  <form id="pedidoForm">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required />
+
+    <label for="producto">Producto que deseas:</label>
+    <select id="producto" name="producto" required>
+      <option value="">--Selecciona una opción--</option>
+      <option value="Vestido para niña">Vestido para niña</option>
+      <option value="Camisa para niño">Camisa para niño</option>
+      <option value="Blusa para mujer">Blusa para mujer</option>
+      <option value="Pantalón para hombre">Pantalón para hombre</option>
+    </select>
+
+    <label for="talla">Talla:</label>
+    <select id="talla" name="talla" required>
+      <option value="">--Selecciona talla--</option>
+      <option value="2">2</option>
+      <option value="4">4</option>
+      <option value="6">6</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="Chica">Chica</option>
+      <option value="Mediana">Mediana</option>
+      <option value="Grande">Grande</option>
+      <option value="Extra grande">Extra grande</option>
+    </select>
+
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color" placeholder="Ej. rojo, azul, negro..." required />
+
+    <label for="direccion">Dirección de envío:</label>
+    <textarea id="direccion" name="direccion" rows="4" placeholder="Calle, número, colonia, ciudad, estado..." required></textarea>
+
+    <label for="tarjeta">Número de tarjeta (16 dígitos):</label>
+    <input type="text" id="tarjeta" name="tarjeta" maxlength="16" pattern="\d{16}" placeholder="Ej. 1234123412341234" required />
+
+    <button type="submit">Enviar pedido</button>
+  </form>
+
+  <div id="mensaje-exito">¡Tu pedido ha sido realizado!</div>
+
+  <a class="back-button" href="index.html">← Regresar al inicio</a>
+
+  <script>
+    document.getElementById('pedidoForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Evita que se recargue la página
+      document.getElementById('mensaje-exito').style.display = 'block';
+      this.reset(); // Limpia el formulario
+    });
+  </script>
+
+</body>
+</html>
